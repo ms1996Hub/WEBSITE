@@ -1,0 +1,41 @@
+# Dependency directories
+/vendor/
+/node_modules/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+
+# IDE specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Local development server
+/.phpunit.result.cache
+
+# Uploads directory
+/uploads/*
+!/uploads/.gitkeep
+
+# Cache
+/cache/*
+!/cache/.gitkeep
+
+# Composer
+/composer.lock
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
