@@ -1,34 +1,22 @@
-# Railway Deployment Configuration
-# Place this in your Railway project settings
+# Railway PHP Application Configuration
+# This file tells Railway how to build and deploy your PHP app
 
-# Build Configuration
 [build]
-builder = "php"
-phpVersion = "8.1"
+# Railway will auto-detect PHP applications
+# No specific builder configuration needed
 
-# Environment Variables (set these in Railway dashboard)
-[env]
-APP_ENV = "production"
-APP_DEBUG = "false"
-APP_URL = "https://your-app.railway.app"
+[deploy]
+# Railway handles deployment automatically
+# Environment variables are set in the Railway dashboard
 
-# Database Configuration (Railway will provide these)
-DB_CONNECTION = "mysql"
-DB_HOST = "your-mysql-host"
-DB_PORT = "3306"
-DB_DATABASE = "railway"
-DB_USERNAME = "root"
-DB_PASSWORD = "your-password"
-
-# Session Configuration
-SESSION_LIFETIME = "120"
-SESSION_SECURE_COOKIE = "true"
-
-# Security
-APP_KEY = "your-generated-app-key"
+# Railway automatically provides:
+# - PHP runtime (latest version)
+# - MySQL database
+# - Environment variables
+# - SSL certificates
 
 # Instructions:
-# 1. Railway will auto-detect this is a PHP app
-# 2. It will automatically set up MySQL database
-# 3. Set the environment variables above in Railway dashboard
-# 4. Your app will deploy automatically from GitHub
+# 1. Railway auto-detects this as a PHP app
+# 2. MySQL database is created automatically
+# 3. Set environment variables in Railway dashboard
+# 4. Deployment happens automatically
